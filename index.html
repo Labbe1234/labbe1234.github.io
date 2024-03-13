@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border-bottom: 1px solid rgb(222, 21, 21);
+            padding: 5px;
+            text-align: left;
+        }
+        td.vertical-line{
+            border-left: 1px solid rgb(222, 21, 21);
+        }
+        body {
+            background-color: #b6b6b6d6;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blueviolet; font-size: 35px; font-family:Arial;">Tomás Labbé Díaz</h1>
+    <p style="font-family:'Courier New', Courier, monospace; font-size: 16px;"><strong>Major:</strong> Civil Engineering in Computer Science</p>
+    <p style="font-family:'Courier New', Courier, monospace; font-size: 16px;"><strong>Year of University Enrollment:</strong> 2021</p>
+    <p style="font-family:'Courier New', Courier, monospace; font-size: 16px;"></pstyle><strong>Link:</strong><a href="https://github.com/Labbe1234/labbe1234.github.io">Github</a></p>
+    <p style="font-family:'Courier New', Courier, monospace; font-size: 16px;"><strong>About me:</strong>My abilities define me as a responsible, 
+        proactive, transparent, sociable, and leadership-oriented professional. I have the ability to work effectively in teams, interact with the public, 
+        and make sound decisions even in high-pressure situations. <p. id="texto"></p></p>
+    <p><input id="textInput" type="text"> <button onclick="addText()">Click</button></p>
+    <table style="border: 1px solid black; background-color: aliceblue; padding-left: 0px; margin: 0px;">
+        <tr>
+            <td><strong>Skills</strong></td>
+            <td class="vertical-line"><strong>Level</strong></td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td class="vertical-line">Expert</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td class="vertical-line">Basic</td> 
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td class="vertical-line">Basic</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td class="vertical-line">Basic</td>
+        </tr>
+        <tr>
+            <td>Excel</td>
+            <td class="vertical-line">Advance</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td class="vertical-line">Expert</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td class="vertical-line">Basic</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td class="vertical-line">Advance</td>
+        </tr>
+        <tr>
+            <td>Spanish</td>
+            <td class="vertical-line">Native</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function addText() {
+        let variable = document.getElementById("textInput").value;
+        document.getElementById("texto").innerHTML = variable;
+        return;
+    }
+</script>
+</html> 
